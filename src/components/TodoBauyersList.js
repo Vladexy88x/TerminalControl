@@ -18,9 +18,6 @@ function ShowSearchItem(item, searchText, isActiveSearch) {
     if (!isActiveSearch) {
         return item;
     }
-    // if (item.indexOf(searchText) != -1) {
-    //     return item;
-    // } 
     if (item === searchText ) {
         return item;
     } 
@@ -29,7 +26,6 @@ function ShowSearchItem(item, searchText, isActiveSearch) {
 export default function TodoBauyersList(props) {
     const classes = useStyles();
     let ShowTable = () => {
-        // const selectNumberShow = parseInt(props.numberShow);
         if (props.numberShow != '' && props.pagination === '') {
             return (
                 props.items.slice(0, props.numberShow).map((item) => (
@@ -79,7 +75,6 @@ export default function TodoBauyersList(props) {
                             <TableCell align="left">{item.averageCheck}</TableCell>
                             <TableCell align="left">{item.numberOfPurchases}</TableCell>
                             <TableCell align="left">{item.totalRevenues}</TableCell>
-
                         </TableRow>
                     ))
                 )
@@ -93,7 +88,6 @@ export default function TodoBauyersList(props) {
                             <TableCell align="left">{item.averageCheck}</TableCell>
                             <TableCell align="left">{item.numberOfPurchases}</TableCell>
                             <TableCell align="left">{item.totalRevenues}</TableCell>
-
                         </TableRow>
                     ))
                 )
@@ -106,7 +100,6 @@ export default function TodoBauyersList(props) {
                             <TableCell align="left">{item.averageCheck}</TableCell>
                             <TableCell align="left">{item.numberOfPurchases}</TableCell>
                             <TableCell align="left">{item.totalRevenues}</TableCell>
-
                         </TableRow>
                     ))
                 )
@@ -121,7 +114,6 @@ export default function TodoBauyersList(props) {
                         <TableCell align="left">{item.averageCheck}</TableCell>
                         <TableCell align="left">{item.numberOfPurchases}</TableCell>
                         <TableCell align="left">{item.totalRevenues}</TableCell>
-
                     </TableRow>
                 ))
             )
