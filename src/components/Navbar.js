@@ -8,10 +8,9 @@ import { IconContext } from 'react-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image } from "react-bootstrap";
 
-
 function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
-
+  
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
@@ -37,7 +36,6 @@ function Navbar(props) {
                     <span>{item.title}</span>
                   </Link>
                 </li>
-
               );
             })}
             <div className='navbar-footer'>
