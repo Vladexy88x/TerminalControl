@@ -1,24 +1,22 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-    BrowserRouter as Router,
-    Route,
-} from "react-router-dom";
 import Buyers from './Buyers';
 import Terminals from './Terminals';
 import Layout from './Layout';
 import { Items } from '../data/dataTable';
 import Navbar from '../components/Navbar';
+import {
+    BrowserRouter as Router,
+    Route,
+} from "react-router-dom";
 
 export default class Buyer extends React.Component {
     constructor(props) {
         super(props);
-       
         this.state = {
             items: Items,
             avatarUrl: localStorage.getItem("avatarUrl")
         }
-
     }
     render() {
         const ids = this.props.match.params.id - 1;
