@@ -9,31 +9,31 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
-    table: {
-        minWidth: 650,
-    },
+  table: {
+    minWidth: 650,
+  },
 });
 
 export default function TodoTerminalList(props) {
-    const classes = useStyles();
-    return (
-        <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="simple table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell align="left">Название терминала</TableCell>
-                        <TableCell align="left">Описание</TableCell> 
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {props.items.map((item) => (
-                        <TableRow>
-                            <TableCell align="left">{item.nameTerminal}</TableCell>
-                            <TableCell align="left">{item.descriptionTerminal}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
+  const classes = useStyles();
+  return (
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell align="left">Название терминала</TableCell>
+            <TableCell align="left">Описание</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {props.items.map((item) => (
+            <TableRow>
+              <TableCell align="left">{item.nameTerminal}</TableCell>
+              <TableCell align="left">{item.descriptionTerminal}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
 }
