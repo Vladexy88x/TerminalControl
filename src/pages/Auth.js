@@ -50,7 +50,6 @@ export default class Auth extends React.Component {
 
     handleLogin = (e) => {
         this.setState({ login: e.target.value });
-
     }
     handlePassword = (e) => {
         this.setState({ password: e.target.value });
@@ -111,12 +110,10 @@ export default class Auth extends React.Component {
                             <Button variant="primary" type="submit">
                                 Submit
                             </Button>
-
                         </Form>
                     </Col>
                 </Row>
             </Container>
-
         )
     }
 }
