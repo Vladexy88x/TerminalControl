@@ -3,23 +3,17 @@ import './App.css';
 import Auth from './pages/Auth';
 import Home from './pages/Home';
 import Buyer from './pages/Buyer';
+import Terminals from './pages/Terminals';
+import Layout from './pages/Layout';
+import Buyers from './pages/Buyers';
+import Helper from './pages/Helper';
+import NoMatch from './pages/NoMatch';
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from "react-router-dom";
 
-import Terminals from './pages/Terminals';
-import Layout from './pages/Layout';
-import Buyers from './pages/Buyers';
-import Helper from './pages/Helper';
-import NoMatch from './pages/NoMatch';
-
-// <Switch>
-//         <Route exact path="/auth" component={Auth}></Route>
-//         <Route  path="/home" component={Home}></Route>
-
-//       </Switch>
 
 export default class App extends React.Component {
   render() {
