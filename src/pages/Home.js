@@ -13,7 +13,6 @@ import Navbar from '../components/Navbar';
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
-
         let STATUS_LOGGED = true;
         let key = this.props.location.key;
         if (key == undefined) {
@@ -23,12 +22,9 @@ export default class Home extends React.Component {
             loggedIn: STATUS_LOGGED,
             avatarUrl: localStorage.getItem("avatarUrl")
         }
-
     }
-
     render() {
         if (this.state.loggedIn === false) {
-            //to="/auth"
             return <Redirect to="/auth" ></Redirect>
         }
         return (
