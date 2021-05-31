@@ -14,7 +14,6 @@ const useStyles = makeStyles({
     },
 });
 
-
 export default function TodoTerminalList(props) {
     const classes = useStyles();
     return (
