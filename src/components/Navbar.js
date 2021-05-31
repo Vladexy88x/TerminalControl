@@ -41,14 +41,10 @@ function Navbar(props) {
             <div className='navbar-footer'>
               <p >Copyright © 2020</p>
             </div>
-
           </ul>
         </nav>
       </IconContext.Provider>
-
     </>
-
   );
 }
-
 export default Navbar;
