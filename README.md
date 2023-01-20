@@ -9,7 +9,8 @@ The simple learn project.
 </a>
   
 </div>
-## Install
+
+<h1>Install</h1>
 
 ```bash
 $ git clone https://github.com/Vladexysys88/TerminalControl.git
