@@ -8,6 +8,7 @@ The simple learn project.
   <img src="https://img.shields.io/badge/react-16.13.1-brightgreen" alt="React">
 </a>
   
+</div>
 ## Install
 
 ```bash
